@@ -283,7 +283,7 @@ class App extends Container
             $this->minify->errorExit($defaults['badRequestHeader'], $url, $msg);
         }
 
-        $this->minify->serve($this->controller, $this->serveOptions);
+        return $this->minify->serve($this->controller, $this->serveOptions);
     }
 
     /**
